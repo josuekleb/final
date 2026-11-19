@@ -1,0 +1,280 @@
+<!doctype html>
+<!--
+  Agendly - Página de cadastro
+  Comentários e atributos ARIA adicionados para clareza e acessibilidade.
+-->
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Agendly — Cadastro</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="help-link" href="#"
+      >Precisa de ajuda? <strong>Central de Suporte</strong></a
+    >
+
+    <main class="page" role="main">
+      <section class="card card--large" aria-labelledby="register-title">
+        <a class="back" href="login.html" aria-label="Voltar">←</a>
+
+        <div class="section-compact">
+          <div class="logo-wrap">
+            <div class="logo-circle">
+              <img
+                src="img/Design%20sem%20nome%201.png"
+                alt="Agendly"
+                class="brand-img"
+              />
+            </div>
+          </div>
+
+          <h1 id="register-title" class="brand">
+            Cadastre como cliente (CPF) ou negócio (CNPJ)
+          </h1>
+          <p class="lead">
+            Acesse novos clientes e automatize sua agenda com a tecnologia da
+            Agendly.
+          </p>
+        </div>
+
+        <form class="register-form" action="#" method="get" novalidate>
+          <div class="form-grid">
+            <div class="grid-item">
+              <label class="field-label">NOME DO NEGÓCIO / NOME</label>
+              <div class="form-field">
+                <span class="field-icon" aria-hidden>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
+                      stroke="#7b8aa3"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg> </span
+                ><input
+                  class="input"
+                  name="business"
+                  placeholder="Nome da sua empresa"
+                />
+              </div>
+            </div>
+            
+            <div class="grid-item">
+              <label class="field-label">CPF OU CNPJ</label>
+              <div class="pill-row">
+                <button
+                  type="button"
+                  class="pill toggle-cpf active"
+                  data-type="cpf"
+                >
+                  CPF
+                </button>
+                <button type="button" class="pill toggle-cnpj" data-type="cnpj">
+                  CNPJ
+                </button>
+              </div>
+              <div class="form-field">
+                <span class="field-icon" aria-hidden>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="3"
+                      y="4"
+                      width="18"
+                      height="16"
+                      rx="2"
+                      stroke="#7b8aa3"
+                      stroke-width="1.2"
+                    />
+                  </svg> </span
+                ><input
+                  class="input cpfcnpj"
+                  name="cpfcnpj"
+                  placeholder="000.000.000-00"
+                />
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <label class="field-label">E-MAIL PESSOAL/COMERCIAL</label>
+              <div class="form-field">
+                <span class="field-icon" aria-hidden>
+                  <svg
+                    width="18"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="3"
+                      y="6"
+                      width="18"
+                      height="12"
+                      rx="2"
+                      stroke="#7b8aa3"
+                      stroke-width="1.2"
+                      fill="none"
+                    />
+                    <path
+                      d="M3 8.5l9 6 9-6"
+                      stroke="#7b8aa3"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    />
+                  </svg> </span
+                ><input
+                  class="input"
+                  name="email"
+                  placeholder="contato@empresa.com.br"
+                />
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <label class="field-label">TELEFONE / WHATSAPP</label>
+              <div class="form-field">
+                <span class="field-icon" aria-hidden>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.86 19.86 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12 1.04.37 2.05.74 3.02a2 2 0 0 1-.45 2.11L8.91 10.09a16 16 0 0 0 6 6l1.24-1.24a2 2 0 0 1 2.11-.45c.97.37 1.98.62 3.02.74A2 2 0 0 1 22 16.92z"
+                      stroke="#7b8aa3"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg> </span
+                ><input
+                  class="input"
+                  name="phone"
+                  placeholder="(11) 99999-0000"
+                />
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <label class="field-label">SENHA</label>
+              <div class="form-field">
+                <span class="field-icon" aria-hidden>
+                  <svg
+                    width="16"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="3"
+                      y="11"
+                      width="18"
+                      height="10"
+                      rx="2"
+                      stroke="#7b8aa3"
+                      stroke-width="1.2"
+                    />
+                    <path
+                      d="M7 11V8a5 5 0 0 1 10 0v3"
+                      stroke="#7b8aa3"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg> </span
+                ><input
+                  class="input"
+                  type="password"
+                  name="password"
+                  placeholder="Mínimo 8 caracteres"
+                />
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <label class="field-label">CONFIRMAR SENHA</label>
+              <div class="form-field">
+                <span class="field-icon" aria-hidden>
+                  <svg
+                    width="16"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 6L9 17l-5-5"
+                      stroke="#7b8aa3"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg> </span
+                ><input
+                  class="input"
+                  type="password"
+                  name="password_confirm"
+                  placeholder="Repita sua senha"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              font-size: 12px;
+              color: var(--muted);
+              margin: 14px 0;
+              text-align: center;
+            "
+          >
+            Ao clicar em Cadastrar-se, você concorda com nossos
+            <a href="#">Termos de Uso</a> e
+            <a href="#">Políticas de Privacidade</a>.
+          </div>
+
+          <button class="btn primary enter" type="submit">
+            <span class="label">Cadastrar-se</span><span class="chev">→</span>
+          </button>
+
+          <div class="divider"></div>
+          <div class="register" style="text-align: center">
+            Já possui uma conta comercial?
+            <a href="login.html">Fazer Login</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      © 2026 Agendly. Todos os direitos reservados.
+    </footer>
+
+    <script src="js/app.js" defer></script>
+    <script src="js/dev-mode.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+Options -Indexes
+DirectoryIndex index.html
+RewriteEngine On
+RewriteRule ^$ page.php?path=index.html [END,QSA]
+
+RewriteCond %{REQUEST_URI} !/login\.html$ [NC]
+RewriteCond %{REQUEST_URI} !/cadastro\.html$ [NC]
+RewriteCond %{REQUEST_URI} !/recuperarsenha\.html$ [NC]
+RewriteCond %{REQUEST_URI} !/redefinirsenha\.html$ [NC]
+RewriteCond %{REQUEST_URI} !/cliente/logincliente\.html$ [NC]
+RewriteCond %{REQUEST_URI} !/loja/loginloja\.html$ [NC]
+RewriteCond %{REQUEST_URI} !/cliente/Termos%20de%20Uso\.html$ [NC]
+RewriteCond %{REQUEST_URI} !/cliente/Privacidade\.html$ [NC]
+RewriteRule ^(.+\.html)$ page.php?path=$1 [END,QSA,NC]
+
+<FilesMatch "^(\.env|.*\.(sql|txt|md|log|ini|bak))$">
+  Require all denied
+</FilesMatch>

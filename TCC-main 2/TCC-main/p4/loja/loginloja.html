@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Agendly — Login do Negócio</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/p4-theme.css" />
+    <script src="../js/p4-interactions.js" defer></script>
+  </head>
+  <body class="auth-page">
+    <a class="help-link" href="../cliente/contato%20suporte.html">Precisa de ajuda? <strong>Suporte</strong></a>
+
+    <main class="page" role="main">
+      <section class="card" aria-labelledby="login-title">
+        <a class="back" href="../login.html" aria-label="Voltar">←</a>
+
+        <h1 id="login-title" class="brand">Agendly</h1>
+        <p class="lead">
+          Login do Negócio<br /><span class="muted"
+            >Acesse a agenda e gerencie seu estabelecimento</span
+          >
+        </p>
+
+        <form class="login-form" action="#" method="get" novalidate data-account-type="loja">
+          <label class="field-label" for="business-email">E-MAIL</label>
+          <div class="form-field">
+            <input
+              class="input"
+              id="business-email"
+              type="email"
+              name="email"
+              autocomplete="email"
+              inputmode="email"
+              required
+              placeholder="contato@empresa.com.br"
+            />
+          </div>
+
+          <label class="field-label" for="business-password">SENHA</label>
+          <div class="form-field">
+            <input
+              class="input"
+              id="business-password"
+              type="password"
+              name="password"
+              autocomplete="current-password"
+              required
+              minlength="8"
+              placeholder="Sua senha"
+            />
+            <button type="button" class="eye" aria-label="Mostrar senha"></button>
+          </div>
+
+          <div class="forgot">
+            Esqueceu a senha? <a href="../recuperarsenha.html">Clique Aqui</a>
+          </div>
+
+          <button class="btn primary enter" type="submit">
+            <span class="label">Entrar</span><span class="chev">→</span>
+          </button>
+
+          <div class="divider"></div>
+          <div class="register">
+            Ainda não possui conta? <a href="../cadastro.html">Cadastre-se</a>
+          </div>
+          <div class="register">
+            É cliente? <a href="../cliente/logincliente.html">Entrar como cliente</a>
+          </div>
+        </form>
+      </section>
+
+      <aside class="auth-aside" aria-label="Benefícios para negócios">
+        <div class="auth-aside-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 21V8l8-5 8 5v13M8 21v-8h8v8M3 21h18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 9h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="auth-aside-kicker">Área do estabelecimento</p>
+        <h2>Organize seu<br />negócio.</h2>
+        <p class="auth-aside-text">Controle sua agenda, acompanhe atendimentos e mantenha todas as informações do estabelecimento atualizadas.</p>
+        <ul class="auth-benefits">
+          <li><span>01</span> Centralize os agendamentos</li>
+          <li><span>02</span> Gerencie horários e serviços</li>
+          <li><span>03</span> Acompanhe os atendimentos</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      © 2026 Agendly Soluções de Agendamento. Todos os direitos reservados.
+    </footer>
+    <script src="../js/app.js" defer></script>
+    <script src="../js/dev-mode.js" defer></script>
+  </body>
+</html>

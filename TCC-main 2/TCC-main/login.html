@@ -1,0 +1,95 @@
+<!doctype html>
+<!--
+  Agendly - Página inicial de escolha de login
+  Estrutura clara para facilitar manutenção: referências a css/styles.css e js/app.js
+-->
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Agendly — Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="help-link" href="#">Precisa de ajuda? <strong>Suporte</strong></a>
+
+    <main class="page" role="main">
+      <section class="card" aria-labelledby="home-title">
+        <div class="logo-wrap">
+          <div class="logo-circle">
+            <img
+              src="img/Design%20sem%20nome%201.png"
+              alt="Agendl-.y"
+              class="brand-img"
+            />
+          </div>
+        </div>
+
+        <p id="home-title" class="lead">
+          Escolha forma de login,<br /><span class="muted"
+            >Cliente (consumidor) ou Negócio (fornecedor)</span
+          >
+        </p>
+
+        <div class="actions">
+          <a class="btn primary" href="cliente/logincliente.html">
+            <span class="icon">
+              <img
+                src="img/Design%20sem%20nome%201.png"
+                alt="Agendly"
+                class="login-brand-icon"
+              />
+            </span>
+            <span class="label">Login Cliente</span>
+            <span class="chev">›</span>
+          </a>
+
+          <a class="btn secondary" href="indexloja.html">
+            <span class="icon">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="3"
+                  y="7"
+                  width="18"
+                  height="10"
+                  rx="2"
+                  stroke="#2B6CE4"
+                  stroke-width="1.2"
+                />
+                <path
+                  d="M7 7V5h10v2"
+                  stroke="#2B6CE4"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span class="label">Login Loja</span>
+            <span class="chev">›</span>
+          </a>
+        </div>
+
+        <div class="register">
+          Ainda não possui conta? <a href="cadastro.html">Cadastre-se</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      © 2026 Agendly Soluções de Agendamento. Todos os direitos reservados.
+    </footer>
+  </body>
+  <script src="js/app.js" defer></script>
+  <script src="js/dev-mode.js" defer></script>
+</html>

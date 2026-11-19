@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Agendly — Perfil do Cliente</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/p4-theme.css" />
+    <script src="../js/p4-interactions.js" defer></script>
+  </head>
+  <body class="profile-body">
+    <div class="profile-shell">
+      <header class="profile-topbar">
+        <div class="topbar-left">
+          <a class="back-icon" href="agenda.html" aria-label="Voltar para sua agenda">←</a>
+          <span class="topbar-title">PERFIL - CLIENTE</span>
+        </div>
+
+        <div class="brand-mini" aria-label="Agendly">
+          <div class="mini-logo-circle">
+            <img src="../img/Design%20sem%20nome%201.png" alt="Agendly" />
+          </div>
+          <span>Agendly</span>
+        </div>
+      </header>
+
+      <main class="profile-main" role="main">
+        <aside class="profile-sidebar">
+          <div class="profile-avatar-wrap">
+            <div class="profile-avatar" aria-label="Foto de perfil">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <circle cx="32" cy="24" r="14" fill="#dfe8f6" />
+                <path d="M18 52c3-10 12-15 14-15s11 5 14 15" fill="#dfe8f6" />
+              </svg>
+            </div>
+            <button class="camera-button" type="button" aria-label="Alterar foto">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M9 3h6l1.2 2H19a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2.8L9 3zm3 5.5A4.5 4.5 0 1 0 16.5 13 4.5 4.5 0 0 0 12 8.5zm0 2A2.5 2.5 0 1 1 9.5 13 2.5 2.5 0 0 1 12 10.5z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            <input id="profile-photo-input" type="file" accept="image/*" hidden />
+          </div>
+
+          <p class="profile-alias">Mari <span>· apelido</span></p>
+          <a class="profile-action" href="logincliente.html">Sair</a>
+
+          <div class="history-box">
+            <h3>Histórico de agendamentos</h3>
+            <ul>
+              <li><span class="history-dot"></span> Studio Arte &amp; Cabelo</li>
+              <li><span class="history-dot"></span> Barbearia Clássica</li>
+              <li><span class="history-dot"></span> Clínica Vida &amp; Saúde</li>
+              <li><span class="history-dot"></span> Serena Spa Urbano</li>
+            </ul>
+            <a href="agenda.html">Ver agenda completa ↗</a>
+          </div>
+        </aside>
+
+        <section class="profile-panel" aria-labelledby="profile-title">
+          <h1 id="profile-title">Cliente de Demonstração</h1>
+          <p class="profile-id">ID: AG-000024 <span class="profile-demo-tag">Conta demonstrativa</span></p>
+
+          <div class="info-list">
+            <div class="info-row" data-profile-field="email">
+              <span class="info-label">E-mail:</span>
+              <span class="info-value">cliente.demo@agendly.test</span>
+              <button type="button" class="edit-button" aria-label="Editar e-mail">Editar</button>
+            </div>
+
+            <div class="info-row" data-profile-field="tel">
+              <span class="info-label">Telefone:</span>
+              <span class="info-value">(11) 90000-2048</span>
+              <button type="button" class="edit-button" aria-label="Editar telefone">Editar</button>
+            </div>
+
+            <div class="info-row" data-profile-field="password">
+              <span class="info-label">Senha:</span>
+              <span class="info-value">••••••••</span>
+              <button type="button" class="edit-button" aria-label="Editar senha">Editar</button>
+            </div>
+
+            <div class="info-row verified-row">
+              <span class="info-label">CPF:</span>
+              <span class="info-value">•••.•••.•••-00</span>
+              <span>Documento não verificado</span>
+            </div>
+          </div>
+
+          <div class="bio-box">
+            <label for="bio">Deixe sua bio personalizada:</label>
+            <textarea
+              id="bio"
+              rows="3"
+              placeholder="Conte um pouco sobre suas preferências de horários, serviços favoritos ou estilo de agendamento..."
+            >Prefiro horários no fim da tarde e gosto de reservar um tempo para cuidar de mim.</textarea>
+            <small class="profile-demo-note">As alterações são apenas demonstrativas e não são enviadas a um servidor.</small>
+          </div>
+
+          <div class="panel-actions">
+            <button type="button" class="btn light-btn profile-cancel">Cancelar</button>
+            <button type="button" class="btn primary-btn profile-save">Salvar alterações</button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="profile-footer">
+        <span>Agendly © 2026 - Todos os direitos reservados.</span>
+        <div class="footer-links">
+          <a href="duvidas.html">Ajuda</a>
+          <a href="Termos%20de%20Uso.html">Termos de Uso</a>
+          <a href="#">Privacidade</a>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/dev-mode.js" defer></script>
+  </body>
+</html>

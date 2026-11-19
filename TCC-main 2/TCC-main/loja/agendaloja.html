@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agendly — Agenda da Loja</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="agenda-loja-body">
+    <header class="agenda-loja-topbar">
+      <div class="agenda-loja-brand">
+        <div class="agenda-loja-logo">
+          <img src="../img/Design%20sem%20nome%201.png" alt="Agendly" />
+        </div>
+        <span>Agendly</span>
+      </div>
+
+      <nav class="agenda-loja-nav" aria-label="Navegação da loja">
+        <button class="agenda-loja-tab" type="button">Editor da Página</button>
+        <button class="agenda-loja-tab active" type="button">
+          Agendamentos
+        </button>
+      </nav>
+
+      <div class="agenda-loja-user">
+        <button
+          class="agenda-loja-bell"
+          type="button"
+          aria-label="Notificações"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 3a5 5 0 0 1 5 5v3.5l1.8 3.5H5.2L7 11.5V8a5 5 0 0 1 5-5zm0 18a2.5 2.5 0 0 1-2.45-2h4.9A2.5 2.5 0 0 1 12 21z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <div class="agenda-loja-avatar">BS</div>
+        <span class="agenda-loja-name">Barbearia Silva Pro</span>
+        <span class="agenda-loja-status">● Estabelecimento Aberto</span>
+      </div>
+    </header>
+
+    <main class="agenda-loja-main" role="main">
+      <section class="agenda-loja-header" aria-label="Agenda da loja">
+        <div class="agenda-loja-title-wrap">
+          <a class="agenda-loja-back" href="indexloja.html" aria-label="Voltar ao editor da loja">
+            ←
+          </a>
+          <h1>Programação:</h1>
+          <span class="agenda-loja-location">Visão do Estabelecimento</span>
+        </div>
+
+        <div class="agenda-loja-controls">
+          <div
+            class="agenda-loja-view-switch"
+            aria-label="Seleção de visualização"
+          >
+            <button class="view-tab" type="button">Hoje</button>
+            <button class="view-tab" type="button">Mês</button>
+            <button class="view-tab active" type="button">Semana</button>
+            <button class="view-tab" type="button">Dia</button>
+          </div>
+
+          <button class="agenda-loja-add" type="button">
+            ＋ Novo Agendamento Manual
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="agenda-loja-calendar-card"
+        aria-label="Calendário de agenda"
+      >
+        <div class="agenda-calendar-head">
+          <button
+            class="calendar-nav left"
+            type="button"
+            aria-label="Mês anterior"
+          >
+            ‹
+          </button>
+          <div class="calendar-title-wrap">
+            <h2>Outubro 2026</h2>
+            <div class="calendar-year-picker">
+              <label for="agenda-year">Ano</label>
+              <select
+                id="agenda-year"
+                name="agenda-year"
+                aria-label="Selecionar ano"
+              >
+                <option>2024</option>
+                <option>2025</option>
+                <option selected>2026</option>
+                <option>2027</option>
+                <option>2028</option>
+              </select>
+            </div>
+          </div>
+          <button
+            class="calendar-nav right"
+            type="button"
+            aria-label="Próximo mês"
+          >
+            ›
+          </button>
+        </div>
+
+        <div
+          class="agenda-calendar-grid"
+          aria-label="Grade de dias do calendário"
+        >
+          <div class="weekday">dom</div>
+          <div class="weekday">seg</div>
+          <div class="weekday">ter</div>
+          <div class="weekday">qua</div>
+          <div class="weekday">qui</div>
+          <div class="weekday">sex</div>
+          <div class="weekday">sab</div>
+
+          <button class="calendar-day muted" type="button">27</button>
+          <button class="calendar-day muted" type="button">28</button>
+          <button class="calendar-day muted" type="button">29</button>
+          <button class="calendar-day muted" type="button">30</button>
+          <button class="calendar-day muted" type="button">1</button>
+          <button class="calendar-day muted" type="button">2</button>
+          <button class="calendar-day muted" type="button">3</button>
+
+          <button class="calendar-day muted" type="button">4</button>
+          <button class="calendar-day muted" type="button">5</button>
+          <button class="calendar-day muted" type="button">6</button>
+          <button class="calendar-day muted" type="button">7</button>
+          <button class="calendar-day muted" type="button">8</button>
+          <button class="calendar-day muted" type="button">9</button>
+          <button class="calendar-day muted" type="button">10</button>
+
+          <button class="calendar-day muted" type="button">11</button>
+          <button class="calendar-day muted" type="button">12</button>
+          <button class="calendar-day muted" type="button">13</button>
+          <button class="calendar-day muted" type="button">14</button>
+          <button class="calendar-day selected" type="button">15</button>
+          <button class="calendar-day muted" type="button">16</button>
+          <button class="calendar-day muted" type="button">17</button>
+
+          <button class="calendar-day muted" type="button">18</button>
+          <button class="calendar-day muted" type="button">19</button>
+          <button class="calendar-day muted" type="button">20</button>
+          <button class="calendar-day muted" type="button">21</button>
+          <button class="calendar-day muted" type="button">22</button>
+          <button class="calendar-day muted" type="button">23</button>
+          <button class="calendar-day muted" type="button">24</button>
+
+          <button class="calendar-day muted" type="button">25</button>
+          <button class="calendar-day muted" type="button">26</button>
+          <button class="calendar-day muted" type="button">27</button>
+          <button class="calendar-day muted" type="button">28</button>
+          <button class="calendar-day muted" type="button">29</button>
+          <button class="calendar-day muted" type="button">30</button>
+          <button class="calendar-day muted" type="button">31</button>
+        </div>
+
+        <div class="calendar-footer-tip">
+          <span>✦</span>
+          <span
+            >Clique uma vez no dia desejado para visualizar e gerenciar a
+            programação completa.</span
+          >
+        </div>
+      </section>
+
+      <section class="agenda-loja-day-panel" aria-label="Programação do dia">
+        <div class="agenda-loja-day-header">
+          <div class="agenda-loja-day-title">
+            <span class="agenda-dot"></span>
+            <h3>Programação de Quinta-feira, 15 de Outubro de 2026</h3>
+          </div>
+          <div class="agenda-loja-filters">
+            <button class="filter-chip active" type="button">Todos (6)</button>
+            <button class="filter-chip" type="button">Confirmados (4)</button>
+            <button class="filter-chip" type="button">Atendidos (0)</button>
+            <button class="filter-chip" type="button">Cancelados (0)</button>
+          </div>
+        </div>
+
+        <div class="agenda-loja-list">
+          <article class="agenda-loja-item">
+            <div class="agenda-time-box">
+              <span class="time">09:30</span>
+              <span class="duration">45 MIN</span>
+            </div>
+            <div class="agenda-info">
+              <div class="agenda-client-line">
+                <span class="client-name">Bruno Martins</span>
+                <span class="status-tag confirmed">● Confirmado</span>
+                <span class="divider-dot">•</span>
+                <span class="profession">Profissional: Mestre Rafael</span>
+              </div>
+              <div class="service-line">
+                Corte Executivo Máquina &amp; Barba Tradicional
+              </div>
+              <div class="price-line">
+                <span class="price">R$ 75,00</span>
+                <span class="meta">Forma: Pago via Pix</span>
+                <span class="meta">Contato: (11) 98765-4321</span>
+              </div>
+            </div>
+            <div class="agenda-actions">
+              <button class="mini-action" type="button">
+                Editar Agendamento
+              </button>
+              <button class="mini-action light" type="button">Remarcar</button>
+              <button class="mini-action cancel" type="button">Cancelar</button>
+            </div>
+          </article>
+
+          <article class="agenda-loja-item">
+            <div class="agenda-time-box">
+              <span class="time">10:00</span>
+              <span class="duration">60 MIN</span>
+            </div>
+            <div class="agenda-info">
+              <div class="agenda-client-line">
+                <span class="client-name">Rafael Souza</span>
+                <span class="status-tag confirmed">● Confirmado</span>
+                <span class="divider-dot">•</span>
+                <span class="profession">Profissional: Barbeiro Carlos</span>
+              </div>
+              <div class="service-line">
+                Combo Barbétaria com Toalha Quente + Corte Tesoura
+              </div>
+              <div class="price-line">
+                <span class="price">R$ 90,00</span>
+                <span class="meta">Pagamento: Cartão Débito</span>
+                <span class="info-pill">Obs: alergia a mentol</span>
+              </div>
+            </div>
+            <div class="agenda-actions">
+              <button class="mini-action" type="button">
+                Editar Agendamento
+              </button>
+              <button class="mini-action light" type="button">Remarcar</button>
+            </div>
+          </article>
+
+          <article class="agenda-loja-item empty-slot">
+            <div class="agenda-time-box">
+              <span class="time">11:30</span>
+              <span class="duration live">Livre</span>
+            </div>
+            <div class="agenda-info">
+              <div class="agenda-client-line">
+                <span class="client-name"
+                  >Horário vago na grade de atendimento.</span
+                >
+              </div>
+            </div>
+            <div class="agenda-actions">
+              <button class="mini-action" type="button">
+                + Encaixar Cliente
+              </button>
+              <button class="mini-action light" type="button">
+                Bloquear Horário
+              </button>
+            </div>
+          </article>
+
+          <article class="agenda-loja-item">
+            <div class="agenda-time-box">
+              <span class="time">14:30</span>
+              <span class="duration">40 MIN</span>
+            </div>
+            <div class="agenda-info">
+              <div class="agenda-client-line">
+                <span class="client-name">Lucas Fernandes</span>
+                <span class="status-tag confirmed">● Confirmado</span>
+                <span class="divider-dot">•</span>
+                <span class="profession">Profissional: Mestre Rafael</span>
+              </div>
+              <div class="service-line">
+                Corte Masculino Degradê Fade + Lavagem Especial
+              </div>
+              <div class="price-line">
+                <span class="price">R$ 55,00</span>
+                <span class="meta">Forma: Pago via Pix</span>
+                <span class="info-pill">Primeira vez no espaço</span>
+              </div>
+            </div>
+            <div class="agenda-actions">
+              <button class="mini-action" type="button">
+                Editar Agendamento
+              </button>
+              <button class="mini-action light" type="button">Remarcar</button>
+            </div>
+          </article>
+
+          <article class="agenda-loja-item">
+            <div class="agenda-time-box">
+              <span class="time">16:00</span>
+              <span class="duration">50 MIN</span>
+            </div>
+            <div class="agenda-info">
+              <div class="agenda-client-line">
+                <span class="client-name">Camila Rocha</span>
+                <span class="status-tag confirmed">● Confirmado</span>
+                <span class="divider-dot">•</span>
+                <span class="profession">Profissional: Esteticista Laura</span>
+              </div>
+              <div class="service-line">
+                Design de Sobrancelhas + Hidratação Express
+              </div>
+              <div class="price-line">
+                <span class="price">R$ 80,00</span>
+                <span class="meta">Pagamento: No local</span>
+                <span class="meta">Contato: (11) 97711-2233</span>
+              </div>
+            </div>
+            <div class="agenda-actions">
+              <button class="mini-action" type="button">
+                Editar Agendamento
+              </button>
+              <button class="mini-action light" type="button">Remarcar</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="agenda-loja-footer">
+      <div class="agenda-loja-copy">
+        © 2026 Agendly. Todos os direitos reservados. Painel de Gestão e
+        Agendamento do Negócio.
+      </div>
+      <div class="agenda-loja-links">
+        <a href="#">Central de Ajuda</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Privacidade</a>
+      </div>
+    </footer>
+    <script src="../js/dev-mode.js" defer></script>
+  </body>
+</html>

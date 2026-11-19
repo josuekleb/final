@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato Suporte</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/p4-theme.css" />
+    <script src="../js/p4-interactions.js" defer></script>
+  </head>
+  <body>
+    <div class="support-page">
+      <header class="topbar">
+        <a class="back-btn" href="../index.html" aria-label="Voltar para a página anterior">
+          <span class="arrow">←</span>
+          <span>Voltar</span>
+        </a>
+
+        <div class="brand-wrap" aria-label="Agendly">
+          <div class="brand-logo">
+            <img src="../img/Design%20sem%20nome%201.png" alt="Agendly" />
+          </div>
+          <span class="brand-name">Agendly</span>
+        </div>
+
+        <a class="help-link" href="duvidas.html">Precisa de ajuda? <strong>Central de Suporte</strong></a>
+      </header>
+
+      <main class="support-container">
+        <section class="support-main">
+          <h1>Falar com o Suporte</h1>
+          <p class="subtitle">Estamos aqui para ajudar com qualquer dúvida, técnica, financeira ou de usabilidade na plataforma.</p>
+
+          <div class="content-grid">
+            <form id="contact-form" class="contact-form" action="#" method="post">
+              <h2>Envie uma Mensagem</h2>
+
+              <div class="field-row">
+                <div class="form-group">
+                  <label for="nome">Seu nome</label>
+                  <div class="input-wrap">
+                    <span class="field-icon">👤</span>
+                    <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">E-mail associado</label>
+                  <div class="input-wrap">
+                    <span class="field-icon">✉</span>
+                    <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="assunto">Assunto</label>
+                <div class="input-wrap select-wrap">
+                  <span class="field-icon">ⓘ</span>
+                  <input id="assunto" name="assunto" type="text" placeholder="Como podemos ajudar?" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem">Mensagem detalhada</label>
+                <textarea id="mensagem" name="mensagem" rows="5" minlength="10" placeholder="Descreva seu problema ou dúvida..." required></textarea>
+              </div>
+
+              <button class="submit-btn" type="submit">
+                Enviar Solicitação
+                <span aria-hidden="true">→</span>
+              </button>
+            </form>
+
+            <aside class="support-panel">
+              <div class="contact-card card-success">
+                <div class="card-icon">💬</div>
+                <div class="card-body">
+                  <h3>WhatsApp Oficial</h3>
+                  <p>Registre uma solicitação de suporte pelo formulário. O atendimento não é em tempo real.</p>
+                  <a href="#contact-form">Iniciar Conversa <span>↗</span></a>
+                </div>
+              </div>
+
+              <div class="contact-card card-mail">
+                <div class="card-icon">✉</div>
+                <div class="card-body">
+                  <h3>E-mail Direto</h3>
+                  <p>Entre em contato enviando um ticket direto para suporte@agendly.com.br</p>
+                </div>
+              </div>
+
+              <div class="contact-card card-info">
+                <div class="card-body compact">
+                  <h3>Prefere atendimento?</h3>
+                  <p>Acesse nossa Central de Ajuda com mais de 50 tutoriais passo a passo.</p>
+                  <a href="duvidas.html">Acessar Perguntas Frequentes <span>›</span></a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>© 2026 Agendly Soluções de Agendamento S.A. Todos os direitos reservados.</span>
+        <nav aria-label="Links do rodapé">
+          <a href="Termos%20de%20Uso.html">Termos de Uso</a>
+          <a href="Privacidade.html">Privacidade</a>
+        </nav>
+      </footer>
+    </div>
+    <script src="../js/dev-mode.js" defer></script>
+  </body>
+</html>

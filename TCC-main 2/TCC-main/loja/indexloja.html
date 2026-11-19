@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Agendly — Loja</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="store-body">
+    <div class="store-shell">
+      <header class="store-header">
+        <div class="store-header-left">
+          <div class="store-brand" aria-label="Agendly">
+            <div class="store-logo-mark">
+              <img src="../img/Design%20sem%20nome%201.png" alt="Agendly" />
+            </div>
+          </div>
+          <button class="store-tab active" type="button">
+            Editar a Página
+          </button>
+          <button class="store-tab" type="button">Agendamentos</button>
+        </div>
+
+        <div class="store-header-right">
+          <button class="header-icon" type="button" aria-label="Notificações">
+            ◔
+          </button>
+          <div class="store-user-pill">
+            <span class="store-user-avatar">SA</span>
+            <span>SA</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="store-main" role="main">
+        <section class="store-profile-card">
+          <div class="store-banner">
+            <button class="banner-button" type="button">
+              Alterar Banner de Fundo
+            </button>
+          </div>
+
+          <div class="store-profile-row">
+            <div class="store-avatar-wrap">
+              <div class="store-avatar">✂</div>
+            </div>
+
+            <div class="store-profile-details">
+              <div class="store-name-row">
+                <h1>Barbearia Silva Pro</h1>
+                <span class="verified-badge">✓ Verificado</span>
+                <span class="profile-badge">Perfil Ativo</span>
+              </div>
+              <p>Especialista em Visagismo &amp; Estética Avançada</p>
+            </div>
+
+            <button class="save-btn" type="button">Salvar Alterações</button>
+          </div>
+        </section>
+
+        <section class="store-blocks-header">
+          <div class="blocks-title-wrap">
+            <h2>Área de Edição da Agenda</h2>
+            <span>5 Blocos Configurados</span>
+          </div>
+
+          <label class="switch-wrap">
+            <span class="switch-icon">◉</span>
+            <span>Pré-visualizar Fluxo</span>
+          </label>
+        </section>
+
+        <div class="store-block-list">
+          <article class="store-block">
+            <div class="block-left">
+              <div class="block-handle">☰</div>
+              <div class="block-icon blue">T</div>
+            </div>
+
+            <div class="block-content">
+              <div class="block-title-row">
+                <h3>Barra 1: Texto &amp; Informações Gerais</h3>
+                <span class="tag info">Informativo</span>
+              </div>
+              <p>
+                Adicione seu texto explicativo, política de atraso e avisos aos
+                clientes.
+              </p>
+            </div>
+
+            <div class="block-actions">
+              <button class="ghost-icon" type="button">✎</button>
+              <button class="add-btn" type="button">+ Adicionar Texto</button>
+            </div>
+          </article>
+
+          <article class="store-block">
+            <div class="block-left">
+              <div class="block-handle">☰</div>
+              <div class="block-icon purple">▣</div>
+            </div>
+
+            <div class="block-content">
+              <div class="block-title-row">
+                <h3>Barra 2: Grade de Serviços &amp; Categorias</h3>
+                <span class="tag principal">Principal</span>
+              </div>
+              <p>
+                Adicione opções como Cortes, Barba, Coloração, Tratamentos e
+                duração.
+              </p>
+            </div>
+
+            <div class="block-actions">
+              <button class="ghost-icon" type="button">✎</button>
+              <button class="add-btn" type="button">+ Adicionar Serviço</button>
+            </div>
+          </article>
+
+          <article class="store-block">
+            <div class="block-left">
+              <div class="block-handle">☰</div>
+              <div class="block-icon yellow">?</div>
+            </div>
+
+            <div class="block-content">
+              <div class="block-title-row">
+                <h3>Barra 3: Questionário &amp; Perguntas Prévias</h3>
+                <span class="tag triagem">Triagem</span>
+              </div>
+              <p>
+                Adicione perguntas antes de agendar (ex: histórico químico,
+                referências).
+              </p>
+            </div>
+
+            <div class="block-actions">
+              <button class="ghost-icon" type="button">✎</button>
+              <button class="add-btn" type="button">+ Adicionar Questão</button>
+            </div>
+          </article>
+
+          <article class="store-block">
+            <div class="block-left">
+              <div class="block-handle">☰</div>
+              <div class="block-icon green">◫</div>
+            </div>
+
+            <div class="block-content">
+              <div class="block-title-row">
+                <h3>Barra 4: Grade de Horários &amp; Expediente</h3>
+                <span class="tag disponibilidade">Disponibilidade</span>
+              </div>
+              <p>
+                Segunda a Sábado • 09:00 às 19:00 • Intervalos de 15 minutos.
+              </p>
+            </div>
+
+            <div class="block-actions">
+              <button class="ghost-icon" type="button">✎</button>
+              <button class="add-btn" type="button">+ Adicionar Horário</button>
+            </div>
+          </article>
+
+          <article class="store-block">
+            <div class="block-left">
+              <div class="block-handle">☰</div>
+              <div class="block-icon light-blue">$</div>
+            </div>
+
+            <div class="block-content">
+              <div class="block-title-row">
+                <h3>Barra 5: Valores, Sinal &amp; Pagamentos</h3>
+                <span class="tag checkout">Checkout</span>
+              </div>
+              <p>
+                Taxas de reserva, Pix imediato, Cartão de Crédito e pagamento no
+                local.
+              </p>
+            </div>
+
+            <div class="block-actions">
+              <button class="ghost-icon" type="button">✎</button>
+              <button class="add-btn" type="button">+ Adicionar Valor</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="store-footer-actions">
+          <button class="btn-secondary" type="button">Descartar</button>
+          <button class="btn-primary" type="button">
+            ✓ Publicar Alterações
+          </button>
+        </div>
+      </main>
+
+      <footer class="store-footer">
+        <span class="footer-brand">Agendly</span>
+        <span
+          >© 2026 Agendly Soluções de Agendamento. Todos os direitos
+          reservados.</span
+        >
+        <div class="store-links">
+          <a href="#">Termos de Uso</a>
+          <a href="#">Privacidade</a>
+          <a href="#">Central de Ajuda</a>
+          <a href="#">Suporte ao Parceiro</a>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/dev-mode.js" defer></script>
+  </body>
+</html>

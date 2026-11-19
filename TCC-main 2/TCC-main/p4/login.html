@@ -1,0 +1,70 @@
+<!doctype html>
+<!--
+  Agendly - Página inicial de escolha de login
+  Estrutura clara para facilitar manutenção: referências a css/styles.css e js/app.js
+-->
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Agendly — Login</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/p4-theme.css" />
+    <script src="js/p4-interactions.js" defer></script>
+  </head>
+  <body class="auth-page">
+    <a class="help-link" href="#">Precisa de ajuda? <strong>Suporte</strong></a>
+
+    <main class="page" role="main">
+      <section class="card" aria-labelledby="home-title">
+        <p id="home-title" class="lead">
+          Escolha como deseja acessar
+        </p>
+
+        <div class="actions">
+          <a class="btn primary" href="cliente/logincliente.html">
+            <span class="label login-choice-label">
+              <span class="login-choice-kicker">Login</span>
+              <span class="login-choice-title">Cliente</span>
+            </span>
+            <span class="chev">›</span>
+          </a>
+          <a class="btn secondary" href="loja/loginloja.html">
+            <span class="label login-choice-label">
+              <span class="login-choice-kicker">Login</span>
+              <span class="login-choice-title">Negócio</span>
+            </span>
+            <span class="chev">›</span>
+          </a>
+        </div>
+
+        <div class="register">
+          Ainda não possui conta? <a href="cadastro.html">Cadastre-se</a>
+        </div>
+      </section>
+
+      <aside class="auth-aside" aria-label="Sobre a Agendly">
+        <div class="auth-aside-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img">
+            <path d="M7 3v3M17 3v3M4.5 9h15M6.5 5h11A2.5 2.5 0 0 1 20 7.5v10A2.5 2.5 0 0 1 17.5 20h-11A2.5 2.5 0 0 1 4 17.5v-10A2.5 2.5 0 0 1 6.5 5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="m8 14 2.2 2.2L16 10.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <p class="auth-aside-kicker">Agende com facilidade</p>
+        <h2>Sua rotina,<br />organizada.</h2>
+        <p class="auth-aside-text">Encontre profissionais, escolha o melhor horário e acompanhe seus agendamentos em um só lugar.</p>
+        <ul class="auth-benefits">
+          <li><span>01</span> Agendamento rápido</li>
+          <li><span>02</span> Horários em tempo real</li>
+          <li><span>03</span> Tudo salvo na sua conta</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      © 2026 Agendly Soluções de Agendamento. Todos os direitos reservados.
+    </footer>
+  </body>
+  <script src="js/app.js" defer></script>
+  <script src="js/dev-mode.js" defer></script>
+</html>

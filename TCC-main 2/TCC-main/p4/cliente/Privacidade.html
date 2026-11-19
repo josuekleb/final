@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Agendly — Privacidade</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/p4-theme.css" />
+    <script src="../js/p4-interactions.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a href="../index.html" class="back-btn">← Voltar ao Agendly</a>
+        <span class="brand-name">Agendly</span>
+      </header>
+      <main class="content-wrap" style="max-width:900px;margin:32px auto;padding:24px">
+        <h1>Privacidade e dados pessoais</h1>
+        <p>Esta página descreve, em linguagem simples, o tratamento previsto pelo protótipo Agendly. O texto precisa ser revisado e aprovado pelo responsável pelo serviço antes de qualquer lançamento público.</p>
+        <h2>Dados tratados</h2>
+        <p>O cadastro solicita nome, e-mail, telefone e CPF ou CNPJ. Reservas podem incluir serviço, data, horário e respostas às perguntas definidas pelo estabelecimento. Mensagens enviadas ao suporte também são armazenadas. Para limitar tentativas de acesso e recuperação de senha, o servidor guarda um HMAC do endereço de rede; registros expirados são removidos periodicamente.</p>
+        <h2>Para que são usados</h2>
+        <p>Os dados permitem criar e proteger contas, publicar vitrines, administrar reservas e responder solicitações de suporte. Senhas são armazenadas como hash pelo servidor; não são salvas em texto puro.</p>
+        <h2>Onde ficam e por quanto tempo</h2>
+        <p>Na publicação Cloudflare, os dados ficam no banco D1 vinculado ao projeto. A sessão usa um cookie assinado, HttpOnly e SameSite=Lax. O operador ainda precisa definir prazos de retenção, rotina de exclusão e cópias de segurança.</p>
+        <p>As listagens públicas usam o identificador do negócio e não expõem separadamente o e-mail de acesso. Um e-mail diferente informado como contato na vitrine pode ser exibido publicamente. As páginas oficiais não carregam fontes, imagens ou rastreadores de terceiros; a tipografia usa fontes disponíveis no dispositivo. Imagens da vitrine são aceitas como JPEG integrado ao conteúdo, sem carregar arquivos de outros domínios.</p>
+        <h2>Solicitações</h2>
+        <p>Para pedir acesso, correção ou exclusão de dados, use a página <a href="contato%20suporte.html">Falar com o suporte</a>. Não informe senhas ou dados financeiros na mensagem.</p>
+        <h2>Pagamentos</h2>
+        <p>O protótipo não processa pagamentos. Não envie dados de cartão; meios de pagamento exibidos nas vitrines são informativos.</p>
+      </main>
+      <footer class="site-footer"><span>Agendly · Seu tempo, do seu jeito.</span><nav><a href="Termos%20de%20Uso.html">Termos de Uso</a><a href="contato%20suporte.html">Contato</a></nav></footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Loja online — Agendly</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/p4-theme.css" />
+    <script src="../js/p4-interactions.js" defer></script>
+    <script src="../js/business-storefront.js" defer></script>
+  </head>
+  <body class="storefront-body">
+    <div class="storefront-shell">
+      <main class="storefront-main" id="storefront-public">
+        <a
+          class="storefront-back"
+          href="../index.html"
+          data-history-back
+        >
+          <span aria-hidden="true">←</span> Voltar
+        </a>
+        <section class="storefront-empty" hidden>
+          <span class="storefront-empty-icon" aria-hidden="true">◷</span>
+          <h1>Esta loja ainda não foi publicada</h1>
+          <p>Volte mais tarde ou descubra outros negócios no Agendly.</p>
+          <a class="storefront-primary-link" href="../index.html">
+            Ver outros negócios
+          </a>
+        </section>
+
+        <div class="storefront-content" hidden>
+          <section class="storefront-hero" aria-labelledby="storefront-name">
+            <div class="storefront-banner" id="storefront-banner"></div>
+            <div class="storefront-profile">
+              <div class="storefront-avatar" id="storefront-avatar"></div>
+              <div class="storefront-profile-copy">
+                <span class="storefront-category" id="storefront-category"></span>
+                <h1 id="storefront-name"></h1>
+                <p id="storefront-tagline"></p>
+                <div class="storefront-location">
+                  <span aria-hidden="true">⌖</span>
+                  <span id="storefront-location"></span>
+                </div>
+              </div>
+              <span class="storefront-open-status">
+                <i aria-hidden="true"></i>
+                <span id="storefront-status-text">Serviços publicados</span>
+              </span>
+            </div>
+          </section>
+
+          <div class="storefront-layout">
+            <aside class="storefront-booking-card" aria-label="Agendamento">
+              <span class="storefront-booking-kicker">SEU PRÓXIMO MOMENTO</span>
+              <h2>Escolha seu serviço</h2>
+              <p>Escolha serviço, profissional, dia e horário conforme o expediente e as reservas registradas.</p>
+              <div class="storefront-contact">
+                <span>Fale com o estabelecimento</span>
+                <a id="storefront-phone" href=""></a>
+                <a id="storefront-email" href=""></a>
+              </div>
+
+              <div class="storefront-booking-step">
+                <div class="step-title">
+                  <span class="step-number">1</span>
+                  <h3>Escolha quem vai atender</h3>
+                </div>
+                <label class="visually-hidden" for="storefront-professional">Profissional</label>
+                <select id="storefront-professional" class="storefront-professional-select" required></select>
+              </div>
+
+              <div class="storefront-booking-step">
+                <div class="step-title">
+                  <span class="step-number">2</span>
+                  <h3>Escolha o dia</h3>
+                </div>
+                <div class="date-grid" id="storefront-date-grid"></div>
+              </div>
+
+              <div class="storefront-booking-times">
+                <div class="time-label" id="storefront-time-label"></div>
+                <div class="time-grid" id="storefront-time-grid"></div>
+              </div>
+
+              <div class="confirmation-box storefront-confirmation">
+                <div class="confirmation-text">
+                  <span>Resumo do agendamento</span>
+                  <h4 id="storefront-booking-summary"></h4>
+                  <small id="storefront-booking-total"></small>
+                </div>
+                <button class="confirmation-btn" id="storefront-book" type="button">
+                  Confirmar reserva <span aria-hidden="true">→</span>
+                </button>
+                <p
+                  class="storefront-booking-status"
+                  id="storefront-booking-status"
+                  role="status"
+                  aria-live="polite"
+                ></p>
+              </div>
+              <p class="storefront-booking-disclaimer">
+                A disponibilidade é revalidada ao confirmar. Feriados e fechamentos especiais devem ser cadastrados pelo estabelecimento.
+              </p>
+            </aside>
+
+            <div class="storefront-content-column">
+              <div class="storefront-trust-row">
+                <span>✓ Vitrine publicada</span>
+                <span>✓ Reserva validada na agenda</span>
+                <span>✓ Atendimento personalizado</span>
+              </div>
+              <div id="storefront-blocks"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="storefront-footer storefront-public-footer">
+        <a class="storefront-footer-brand" href="../index.html">Agendly<span>.</span></a>
+        <span>© 2026 Agendly · Seu tempo, do seu jeito.</span>
+        <nav aria-label="Links de rodapé">
+          <a href="Termos%20de%20Uso.html">Termos de Uso</a>
+          <a href="duvidas.html">Central de Ajuda</a>
+          <a href="contato%20suporte.html">Suporte</a>
+        </nav>
+      </footer>
+    </div>
+    <script src="../js/dev-mode.js" defer></script>
+  </body>
+</html>

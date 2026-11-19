@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agendly — Agenda da Loja</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/p4-theme.css" />
+    <script src="../js/business-storefront.js" defer></script>
+    <script src="../js/p4-interactions.js" defer></script>
+  </head>
+  <body class="agenda-loja-body">
+    <header class="agenda-loja-topbar">
+      <div class="agenda-loja-brand">
+        <div class="agenda-loja-logo">
+          <img src="../img/Design%20sem%20nome%201.png" alt="Agendly" />
+        </div>
+        <span>Agendly</span>
+      </div>
+
+      <nav class="agenda-loja-nav" aria-label="Navegação da loja">
+        <button class="agenda-loja-tab" type="button">Editor da Página</button>
+        <button class="agenda-loja-tab active" type="button">
+          Agendamentos
+        </button>
+      </nav>
+
+      <div class="agenda-loja-user">
+        <button
+          class="agenda-loja-bell"
+          type="button"
+          aria-label="Notificações"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 3a5 5 0 0 1 5 5v3.5l1.8 3.5H5.2L7 11.5V8a5 5 0 0 1 5-5zm0 18a2.5 2.5 0 0 1-2.45-2h4.9A2.5 2.5 0 0 1 12 21z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <div class="agenda-loja-avatar">BS</div>
+        <span class="agenda-loja-name">Barbearia Silva Pro</span>
+        <span class="agenda-loja-status">Agenda do estabelecimento</span>
+      </div>
+    </header>
+
+    <main class="agenda-loja-main" role="main">
+      <section class="agenda-loja-header" aria-label="Agenda da loja">
+        <div class="agenda-loja-title-wrap">
+          <a class="agenda-loja-back" href="indexloja.html" aria-label="Voltar ao editor da loja">
+            ←
+          </a>
+          <h1>Programação:</h1>
+          <span class="agenda-loja-location">Visão do Estabelecimento</span>
+        </div>
+
+        <div class="agenda-loja-controls">
+          <div
+            class="agenda-loja-view-switch"
+            aria-label="Seleção de visualização"
+          >
+            <button class="view-tab active" type="button" data-calendar-view="month" aria-pressed="true">Mês</button>
+            <button class="view-tab" type="button" data-calendar-view="week" aria-pressed="false">Semana</button>
+          </div>
+
+          <button class="agenda-loja-add" type="button" data-open-manual-booking>
+            ＋ Novo Agendamento Manual
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="agenda-loja-calendar-card"
+        aria-label="Calendário de agenda"
+      >
+        <div class="agenda-calendar-head">
+          <button
+            class="calendar-nav left"
+            type="button"
+            aria-label="Mês anterior"
+          >
+            ‹
+          </button>
+          <div class="calendar-title-wrap">
+            <h2>Outubro 2026</h2>
+            <div class="calendar-year-picker">
+              <label for="agenda-year">Ano</label>
+              <select
+                id="agenda-year"
+                name="agenda-year"
+                aria-label="Selecionar ano"
+              >
+                <option>2024</option>
+                <option>2025</option>
+                <option selected>2026</option>
+                <option>2027</option>
+                <option>2028</option>
+              </select>
+            </div>
+          </div>
+          <button
+            class="calendar-nav right"
+            type="button"
+            aria-label="Próximo mês"
+          >
+            ›
+          </button>
+        </div>
+
+        <div
+          class="agenda-calendar-grid"
+          aria-label="Grade de dias do calendário"
+        >
+          <div class="weekday">dom</div>
+          <div class="weekday">seg</div>
+          <div class="weekday">ter</div>
+          <div class="weekday">qua</div>
+          <div class="weekday">qui</div>
+          <div class="weekday">sex</div>
+          <div class="weekday">sab</div>
+
+          <button class="calendar-day muted" type="button">27</button>
+          <button class="calendar-day muted" type="button">28</button>
+          <button class="calendar-day muted" type="button">29</button>
+          <button class="calendar-day muted" type="button">30</button>
+          <button class="calendar-day muted" type="button">1</button>
+          <button class="calendar-day muted" type="button">2</button>
+          <button class="calendar-day muted" type="button">3</button>
+
+          <button class="calendar-day muted" type="button">4</button>
+          <button class="calendar-day muted" type="button">5</button>
+          <button class="calendar-day muted" type="button">6</button>
+          <button class="calendar-day muted" type="button">7</button>
+          <button class="calendar-day muted" type="button">8</button>
+          <button class="calendar-day muted" type="button">9</button>
+          <button class="calendar-day muted" type="button">10</button>
+
+          <button class="calendar-day muted" type="button">11</button>
+          <button class="calendar-day muted" type="button">12</button>
+          <button class="calendar-day muted" type="button">13</button>
+          <button class="calendar-day muted" type="button">14</button>
+          <button class="calendar-day selected" type="button">15</button>
+          <button class="calendar-day muted" type="button">16</button>
+          <button class="calendar-day muted" type="button">17</button>
+
+          <button class="calendar-day muted" type="button">18</button>
+          <button class="calendar-day muted" type="button">19</button>
+          <button class="calendar-day muted" type="button">20</button>
+          <button class="calendar-day muted" type="button">21</button>
+          <button class="calendar-day muted" type="button">22</button>
+          <button class="calendar-day muted" type="button">23</button>
+          <button class="calendar-day muted" type="button">24</button>
+
+          <button class="calendar-day muted" type="button">25</button>
+          <button class="calendar-day muted" type="button">26</button>
+          <button class="calendar-day muted" type="button">27</button>
+          <button class="calendar-day muted" type="button">28</button>
+          <button class="calendar-day muted" type="button">29</button>
+          <button class="calendar-day muted" type="button">30</button>
+          <button class="calendar-day muted" type="button">31</button>
+        </div>
+
+        <div class="calendar-footer-tip">
+          <span>✦</span>
+          <span
+            >Clique uma vez no dia desejado para visualizar e gerenciar a
+            programação completa.</span
+          >
+        </div>
+      </section>
+
+      <section class="agenda-loja-day-panel" aria-label="Programação do dia">
+        <div class="agenda-loja-day-header">
+          <div class="agenda-loja-day-title">
+            <span class="agenda-dot"></span>
+            <h3>Programação de Quinta-feira, 15 de Outubro de 2026</h3>
+            <p class="agenda-day-summary">4 agendamentos confirmados · 1 horário disponível</p>
+          </div>
+          <div class="agenda-loja-filters">
+            <button class="filter-chip active" type="button" data-agenda-filter="all">Todos (4)</button>
+            <button class="filter-chip" type="button" data-agenda-filter="confirmed">Confirmados (4)</button>
+            <button class="filter-chip" type="button" data-agenda-filter="attended">Atendidos (0)</button>
+            <button class="filter-chip" type="button" data-agenda-filter="cancelled">Cancelados (0)</button>
+          </div>
+        </div>
+
+        <div class="agenda-loja-list">
+
+
+
+
+
+
+
+
+
+        </div>
+      </section>
+    </main>
+
+    <dialog class="manual-booking-dialog" aria-labelledby="manual-booking-title">
+      <form class="manual-booking-form">
+        <header class="manual-booking-header">
+          <div>
+            <span class="manual-booking-kicker">AGENDA DO ESTABELECIMENTO</span>
+            <h2 id="manual-booking-title">Novo agendamento manual</h2>
+            <p>Registre o cliente e escolha um serviço e horário disponíveis.</p>
+          </div>
+          <button class="manual-booking-close" type="button" aria-label="Fechar janela">×</button>
+        </header>
+        <label class="manual-field">Nome do cliente<input name="client" autocomplete="name" required /></label>
+        <label class="manual-field">Telefone<input name="phone" type="tel" autocomplete="tel" required /></label>
+        <label class="manual-field">Serviço<select name="service" required></select></label>
+        <label class="manual-field">Profissional<select name="professional" required></select></label>
+        <div class="manual-booking-service-summary" aria-live="polite"></div>
+        <div class="manual-booking-row">
+          <label class="manual-field">Data<input name="date" type="date" required /></label>
+          <label class="manual-field">Horário<select name="time" required></select></label>
+        </div>
+        <label class="manual-field">Forma de pagamento<select name="payment" required></select></label>
+        <label class="manual-field">Observações<textarea name="notes" rows="2" placeholder="Opcional"></textarea></label>
+        <p class="manual-booking-message" role="status" aria-live="polite"></p>
+        <footer class="manual-booking-actions">
+          <button class="manual-booking-cancel" type="button">Voltar</button>
+          <button class="manual-booking-submit" type="submit">Confirmar agendamento</button>
+        </footer>
+      </form>
+    </dialog>
+
+    <footer class="agenda-loja-footer">
+      <div class="agenda-loja-copy">
+        © 2026 Agendly. Todos os direitos reservados. Painel de Gestão e
+        Agendamento do Negócio.
+      </div>
+      <div class="agenda-loja-links">
+        <a href="../cliente/duvidas.html">Central de Ajuda</a>
+        <a href="../cliente/Termos%20de%20Uso.html">Termos de Uso</a>
+        <a href="../cliente/Privacidade.html">Privacidade</a>
+      </div>
+    </footer>
+    <script src="../js/appointment-actions.js" defer></script>
+    <script src="../js/dev-mode.js" defer></script>
+  </body>
+</html>

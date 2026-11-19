@@ -1,0 +1,321 @@
+<!doctype html>
+<!--
+  Agendly - Marketplace (refatorado)
+  - Sidebar fixa (esquerda)
+  - Conteúdo principal rolável (direita)
+  - Grid de cards 3 colunas replicando layout de destaque
+-->
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Agendly — Marketplace</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <main class="marketpage" role="main">
+      <aside class="market-sidebar" aria-label="Sidebar categorias">
+        <div class="sidebar-top">
+          <div class="logo-area">
+            <div class="logo-circle small">
+              <img src="../img/Design%20sem%20nome%201.png" alt="Agendly" />
+            </div>
+          </div>
+
+          <div class="categories-title">CATEGORIAS DE SERVIÇOS</div>
+          <ul class="categories-list">
+            <li class="category-item active" data-category="all">Todos</li>
+            <li class="category-item" data-category="eletrica">Elétrica</li>
+            <li class="category-item" data-category="cabelo">Cabelo</li>
+            <li class="category-item" data-category="clinica">Clínica</li>
+            <li class="category-item" data-category="imoveis">Imóveis</li>
+            <li class="category-item" data-category="instrumentos">Instrumentos</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-bottom">
+          <div class="user-panel">
+            <div class="user-card">
+              <div class="user-initials">NU</div>
+              <div>
+                <div class="user-name">Nome de usuário</div>
+                <div class="user-email">usuario.cliente@gr</div>
+              </div>
+            </div>
+            <button class="btn secondary logout">Sair da conta</button>
+          </div>
+        </div>
+      </aside>
+
+      <section class="market-content">
+        <div class="content-top">
+          <div class="search-bar">
+            <a class="calendar-button" href="agenda.html" aria-label="Abrir agenda">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8" fill="none"></rect>
+                <path d="M8 3v4M16 3v4M3 9h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              </svg>
+            </a>
+            <button class="search-icon" aria-label="Pesquisar">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11" cy="11" r="6" stroke="#94a3b8" stroke-width="1.5" />
+                <path d="M21 21l-4.35-4.35" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </button>
+            <input id="market-search" type="search" placeholder="Buscar serviços, salões, clínicas ou profissionais..." />
+            <button type="button" class="filter-toggle" aria-label="Abrir filtros">Filtrar</button>
+          </div>
+        </div>
+
+        <div class="content-body">
+          <div class="content-header">
+            <div>
+              <h1 class="market-title">Negócios & Profissionais em Destaque</h1>
+              <p class="market-sub">Encontre e reserve horários nos melhores estabelecimentos próximos a você</p>
+            </div>
+            <div class="results-count">11 resultados encontrados</div>
+          </div>
+
+          <div class="cards-grid" id="market-grid">
+            <article class="market-card" data-category="cabelo" data-price="60" data-rating="4.9">
+              <div class="card-top gradient-purple">
+                <span class="pill-status">Aberto agora</span>
+                <span class="rating">★ 4.9</span>
+                <div class="initials">AC</div>
+              </div>
+              <div class="card-body">
+                <h3>Studio Arte & Cabelo</h3>
+                <a class="card-cat">Cabelo & Estética</a>
+                <div class="card-address">Av. Paulista, 1000 - Jardins (1.2 km)</div>
+                <div class="card-actions">
+                  <span class="price">Corte a partir de R$ 60</span>
+                  <button class="btn primary">Agendar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="market-card" data-category="clinica" data-price="180" data-rating="5.0">
+              <div class="card-top gradient-green">
+                <span class="pill-status">Disponível hoje</span>
+                <span class="rating">★ 5.0</span>
+                <div class="initials">VS</div>
+              </div>
+              <div class="card-body">
+                <h3>Clínica Vida & Saúde</h3>
+                <a class="card-cat">Clínica Geral & Dermato</a>
+                <div class="card-address">Rua Bela Cintra, 450 - Consolação</div>
+                <div class="card-actions">
+                  <span class="price">Consulta a partir de R$ 180</span>
+                  <button class="btn primary">Agendar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="market-card" data-category="eletrica" data-price="90" data-rating="4.8">
+              <div class="card-top gradient-orange">
+                <span class="pill-status">Atendimento 24h</span>
+                <span class="rating">★ 4.8</span>
+                <div class="initials">EP</div>
+              </div>
+              <div class="card-body">
+                <h3>EletroPro Soluções Elétricas</h3>
+                <a class="card-cat">Serviços Elétricos & Reparos</a>
+                <div class="card-address">Atende em toda Grande São Paulo</div>
+                <div class="card-actions">
+                  <span class="price">Visita técnica R$ 90</span>
+                  <button class="btn primary">Agendar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="market-card" data-category="instrumentos" data-price="110" data-rating="4.9">
+              <div class="card-top gradient-purple">
+                <span class="pill-status">Horários livres</span>
+                <span class="rating">★ 4.9</span>
+                <div class="initials">HI</div>
+              </div>
+              <div class="card-body">
+                <h3>Harmonia Luthieria & Aulas</h3>
+                <a class="card-cat">Instrumentos Musicais</a>
+                <div class="card-address">Rua Teodoro Sampaio, 890 - Pinheiros</div>
+                <div class="card-actions">
+                  <span class="price">Regulagem a partir de R$ 110</span>
+                  <button class="btn primary">Agendar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="market-card" data-category="imoveis" data-price="0" data-rating="4.7">
+              <div class="card-top gradient-blue">
+                <span class="pill-status">Visita presencial</span>
+                <span class="rating">★ 4.7</span>
+                <div class="initials">IP</div>
+              </div>
+              <div class="card-body">
+                <h3>Imóveis Prime & Consultoria</h3>
+                <a class="card-cat">Corretagem & Avaliação</a>
+                <div class="card-address">Av. Faria Lima, 2200 - Itaim Bibi</div>
+                <div class="card-actions">
+                  <span class="price">Consultoria Gratuita</span>
+                  <button class="btn primary">Agendar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="market-card" data-category="cabelo" data-price="85" data-rating="4.9">
+              <div class="card-top gradient-dark">
+                <span class="pill-status">Aberto agora</span>
+                <span class="rating">★ 4.9</span>
+                <div class="initials">BC</div>
+              </div>
+              <div class="card-body">
+                <h3>Barbearia Clássica & Lounge</h3>
+                <a class="card-cat">Barba & Cabelo Masculino</a>
+                <div class="card-address">Rua Oscar Freire, 612 - Cerqueira César</div>
+                <div class="card-actions">
+                  <span class="price">Combo a partir de R$ 85</span>
+                  <button class="btn primary">Agendar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="market-card" data-category="clinica" data-price="50" data-rating="4.9">
+              <div class="card-top gradient-teal">
+                <span class="pill-status">Aberto</span>
+                <span class="rating">★ 4.9</span>
+                <div class="initials">OD</div>
+              </div>
+              <div class="card-body">
+                <h3>Odonto Smile & Estética</h3>
+                <a class="card-cat">Odontologia & Clareamento</a>
+                <div class="card-address">Al. Santos, 1400 - Cerqueira César</div>
+                <div class="card-actions">
+                  <span class="price">Avaliação R$ 50</span>
+                  <button class="btn primary">Agendar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="market-card" data-category="eletrica" data-price="0" data-rating="4.8">
+              <div class="card-top gradient-gold">
+                <span class="pill-status">Plantão ativo</span>
+                <span class="rating">★ 4.8</span>
+                <div class="initials">FS</div>
+              </div>
+              <div class="card-body">
+                <h3>Força Solar Instalações</h3>
+                <a class="card-cat">Energia Solar & Quadros</a>
+                <div class="card-address">Av. Rebouças, 1105 - Pinheiros</div>
+                <div class="card-actions">
+                  <span class="price">Orçamento Sem custo</span>
+                  <button class="btn primary">Agendar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="market-card" data-category="instrumentos" data-price="75" data-rating="5.0">
+              <div class="card-top gradient-pink">
+                <span class="pill-status">Aberto até 22h</span>
+                <span class="rating">★ 5.0</span>
+                <div class="initials">SL</div>
+              </div>
+              <div class="card-body">
+                <h3>Sonora Lab Ensaios & Áudio</h3>
+                <a class="card-cat">Salas de Ensaio & Gravação</a>
+                <div class="card-address">Rua Cardeal Arcoverde, 1530 - Vila Madalena</div>
+                <div class="card-actions">
+                  <span class="price">Hora a partir de R$ 75</span>
+                  <button class="btn primary">Agendar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="market-card" data-category="cabelo" data-price="120" data-rating="4.8">
+              <div class="card-top gradient-purple">
+                <span class="pill-status">Nova agenda</span>
+                <span class="rating">★ 4.8</span>
+                <div class="initials">RA</div>
+              </div>
+              <div class="card-body">
+                <h3>Raio de Luz Beauty Studio</h3>
+                <a class="card-cat">Coloração & Tratamentos</a>
+                <div class="card-address">Rua da Consolação, 730 - Centro</div>
+                <div class="card-actions">
+                  <span class="price">Tratamento a partir de R$ 120</span>
+                  <button class="btn primary">Agendar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="market-card" data-category="clinica" data-price="140" data-rating="4.7">
+              <div class="card-top gradient-green">
+                <span class="pill-status">Agendamento</span>
+                <span class="rating">★ 4.7</span>
+                <div class="initials">LG</div>
+              </div>
+              <div class="card-body">
+                <h3>Life Glow Medicina</h3>
+                <a class="card-cat">Dermatologia & Estética</a>
+                <div class="card-address">Avenida Morumbi, 1320 - Morumbi</div>
+                <div class="card-actions">
+                  <span class="price">Sessão a partir de R$ 140</span>
+                  <button class="btn primary">Agendar</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="filter-modal" aria-hidden="true">
+      <div class="filter-panel" role="dialog" aria-modal="true" aria-labelledby="filter-title">
+        <div class="filter-header">
+          <h3 id="filter-title">Filtrar resultados</h3>
+          <button type="button" class="filter-close" aria-label="Fechar filtro">×</button>
+        </div>
+
+        <div class="filter-grid">
+          <label class="filter-field">
+            <span>Valor mínimo</span>
+            <input type="number" id="min-price" min="0" step="10" placeholder="R$ 0" />
+          </label>
+          <label class="filter-field">
+            <span>Valor máximo</span>
+            <input type="number" id="max-price" min="0" step="10" placeholder="R$ 500" />
+          </label>
+          <label class="filter-field full">
+            <span>Avaliações positivas</span>
+            <select id="rating-filter">
+              <option value="0">Qualquer avaliação</option>
+              <option value="4.5">4.5+ estrelas</option>
+              <option value="4.8">4.8+ estrelas</option>
+              <option value="4.9">4.9+ estrelas</option>
+            </select>
+          </label>
+          <label class="filter-field full">
+            <span>Ordenar por</span>
+            <select id="sort-filter">
+              <option value="relevance">Mais relevantes</option>
+              <option value="price-asc">Preço: menor para maior</option>
+              <option value="price-desc">Preço: maior para menor</option>
+              <option value="rating-desc">Avaliação: maior para menor</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="filter-actions">
+          <button type="button" class="btn secondary filter-reset">Limpar</button>
+          <button type="button" class="btn primary filter-apply">Aplicar filtro</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/app.js" defer></script>
+    <script src="../js/dev-mode.js" defer></script>
+  </body>
+</html>

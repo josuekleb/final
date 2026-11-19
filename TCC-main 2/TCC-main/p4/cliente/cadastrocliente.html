@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0a2144" />
+    <title>Agendly — Cadastro de cliente</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/p4-theme.css" />
+    <script src="../js/p4-interactions.js" defer></script>
+    <script src="../js/app.js" defer></script>
+  </head>
+  <body class="auth-page">
+    <a class="help-link" href="contato%20suporte.html">Precisa de ajuda? <strong>Suporte</strong></a>
+    <main class="page" role="main">
+      <section class="card card--large" aria-labelledby="register-title">
+        <a class="back" href="../cadastro.html" aria-label="Voltar">←</a>
+        <h1 id="register-title" class="brand">Conta de cliente</h1>
+        <p class="lead">Crie sua conta para descobrir serviços e agendar online.</p>
+
+        <form class="register-form" action="#" method="post" novalidate data-login-url="logincliente.html">
+          <div class="form-grid">
+            <div class="grid-item">
+              <label class="field-label" for="client-name">NOME COMPLETO</label>
+              <div class="form-field">
+                <input class="input" id="client-name" name="business" type="text" autocomplete="name" maxlength="160" required placeholder="Seu nome" />
+              </div>
+            </div>
+            <div class="grid-item">
+              <label class="field-label" for="client-cpf">CPF</label>
+              <div class="form-field">
+                <input class="input cpfcnpj" id="client-cpf" name="cpfcnpj" type="text" inputmode="numeric" autocomplete="off" maxlength="14" data-type="cpf" required placeholder="000.000.000-00" />
+              </div>
+            </div>
+            <div class="grid-item">
+              <label class="field-label" for="client-email">E-MAIL</label>
+              <div class="form-field">
+                <input class="input" id="client-email" name="email" type="email" autocomplete="email" maxlength="190" required placeholder="voce@exemplo.com" />
+              </div>
+            </div>
+            <div class="grid-item">
+              <label class="field-label" for="client-phone">CELULAR / WHATSAPP</label>
+              <div class="form-field">
+                <input class="input" id="client-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" maxlength="11" required placeholder="11999990000" />
+              </div>
+            </div>
+            <div class="grid-item">
+              <label class="field-label" for="client-password">SENHA</label>
+              <div class="form-field">
+                <input class="input" id="client-password" name="password" type="password" autocomplete="new-password" minlength="8" maxlength="72" required placeholder="Mínimo de 8 caracteres" />
+              </div>
+            </div>
+          </div>
+
+          <p class="register-backend-notice" data-backend-notice hidden>Para criar sua conta, a API do Cloudflare Pages e o banco D1 precisam estar configurados.</p>
+          <p class="field-message" data-register-message role="status" aria-live="polite"></p>
+          <p class="register-terms">
+            Ao continuar, você concorda com os <a href="Termos%20de%20Uso.html">Termos de Uso</a> e a
+            <a href="Privacidade.html">Política de Privacidade</a>.
+          </p>
+          <button class="btn primary enter" type="submit">
+            <span class="label">Criar conta</span><span class="chev">→</span>
+          </button>
+          <div class="divider"></div>
+          <div class="register" style="text-align: center">
+            Já possui conta? <a href="logincliente.html">Entrar como cliente</a>
+          </div>
+          <div class="register" style="text-align: center">
+            Quer cadastrar um negócio? <a href="../loja/cadastroloja.html">Ir para cadastro de negócio</a>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">© 2026 Agendly. Todos os direitos reservados.</footer>
+    <script src="../js/dev-mode.js" defer></script>
+  </body>
+</html>

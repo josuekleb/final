@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Agendly — Loja</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/p4-theme.css" />
+    <script src="../js/p4-interactions.js" defer></script>
+    <script src="../js/business-storefront.js" defer></script>
+    <script src="../js/business-store-editor.js" defer></script>
+  </head>
+  <body class="store-body">
+    <div class="store-shell">
+      <main class="store-main" role="main">
+        <section class="store-profile-card" aria-labelledby="store-name">
+          <div class="store-banner" aria-label="Banner do estabelecimento">
+            <img class="store-banner-image" id="store-banner-image" alt="" hidden />
+            <button class="banner-button" type="button">
+              Alterar Banner de Fundo
+            </button>
+            <input id="store-banner-input" type="file" accept="image/*" hidden />
+          </div>
+
+          <div class="store-profile-row">
+            <div class="store-avatar-wrap">
+              <div class="store-avatar" id="store-avatar" aria-hidden="true">✂</div>
+              <button
+                class="store-photo-button"
+                id="change-store-avatar"
+                type="button"
+                aria-label="Alterar foto do negócio"
+              >
+                📷
+              </button>
+              <input id="store-avatar-input" type="file" accept="image/*" hidden />
+            </div>
+
+            <div class="store-profile-details">
+              <div class="store-name-row">
+                <h1 id="store-name">Barbearia Silva Pro</h1>
+                <span class="verified-badge">Painel do negócio</span>
+                <span class="profile-badge">Perfil da loja</span>
+              </div>
+              <p id="store-tagline"></p>
+              <span class="store-profile-category" id="store-category"></span>
+            </div>
+
+            <div class="store-profile-actions">
+              <button class="store-profile-edit" id="edit-store-profile" type="button">
+                Editar perfil
+              </button>
+              <button class="save-btn" id="save-store-draft" type="button">
+                Salvar rascunho
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="store-blocks-header">
+          <div class="blocks-title-wrap">
+            <h2>Monte sua loja online</h2>
+            <span class="store-block-count" id="store-block-count"></span>
+          </div>
+
+          <div class="store-editor-toolbar">
+            <button class="store-add-block" id="add-store-block" type="button">
+              + Adicionar bloco
+            </button>
+            <button class="switch-wrap" id="preview-store" type="button">
+            <span class="switch-icon" aria-hidden="true">◉</span>
+            <span>Pré-visualização</span>
+            </button>
+          </div>
+        </section>
+
+        <p class="store-editor-help">
+          Organize o perfil, a equipe, os serviços, horários e ofertas que seus clientes
+          verão ao abrir a página do negócio.
+        </p>
+        <div
+          class="store-block-list"
+          id="store-block-list"
+          aria-label="Blocos da página do negócio"
+        ></div>
+
+        <div class="store-footer-actions">
+          <button class="btn-secondary" id="discard-store-changes" type="button">
+            Descartar alterações
+          </button>
+          <button class="btn-primary" id="publish-store" type="button">
+            ✓ Publicar loja
+          </button>
+        </div>
+      </main>
+
+      <footer class="store-footer">
+        <span class="footer-brand">Agendly</span>
+        <span
+          >© 2026 Agendly Soluções de Agendamento. Todos os direitos
+          reservados.</span
+        >
+        <nav class="store-links" aria-label="Links de rodapé">
+          <a href="../cliente/Termos%20de%20Uso.html">Termos de Uso</a>
+          <a href="../cliente/duvidas.html">Central de Ajuda</a>
+          <a href="../cliente/contato%20suporte.html">Suporte ao Parceiro</a>
+        </nav>
+      </footer>
+    </div>
+
+    <dialog class="store-dialog" id="store-edit-dialog">
+      <form id="store-edit-form">
+        <header class="store-dialog-header">
+          <div>
+            <span class="store-dialog-kicker">PERSONALIZE SUA PÁGINA</span>
+            <h2 id="store-edit-title">Editar bloco</h2>
+          </div>
+          <button class="store-dialog-close" type="button" data-close-editor aria-label="Fechar">
+            ×
+          </button>
+        </header>
+        <div class="store-dialog-fields" id="store-edit-fields"></div>
+        <footer class="store-dialog-actions">
+          <button class="store-delete-block" id="delete-store-block" type="button" hidden>
+            Excluir bloco
+          </button>
+          <button class="btn-secondary" type="button" data-close-editor>
+            Cancelar
+          </button>
+          <button class="btn-primary" type="submit">Salvar bloco</button>
+        </footer>
+      </form>
+    </dialog>
+
+    <dialog class="store-preview-dialog" id="store-preview-dialog">
+      <header class="store-dialog-header">
+        <div>
+          <span class="store-dialog-kicker">ASSIM SEU CLIENTE VÊ</span>
+          <h2>Pré-visualização da loja</h2>
+        </div>
+        <button
+          class="store-dialog-close"
+          id="close-store-preview"
+          type="button"
+          aria-label="Fechar pré-visualização"
+        >
+          ×
+        </button>
+      </header>
+      <iframe
+        id="store-preview-frame"
+        title="Pré-visualização da loja para clientes"
+      ></iframe>
+    </dialog>
+
+    <script src="../js/dev-mode.js" defer></script>
+  </body>
+</html>

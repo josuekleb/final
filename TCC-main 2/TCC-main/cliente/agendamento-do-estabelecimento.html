@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendamento do Estabelecimento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="booking-page">
+    <header class="topbar">
+      <a class="back-link" href="indexcliente.html" aria-label="Voltar para a página inicial">
+        <span aria-hidden="true">←</span>
+        <span>Voltar para início</span>
+      </a>
+
+      <label class="search-box" aria-label="Buscar serviços neste estabelecimento">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="5.5"></circle>
+          <path d="M16 16L21 21"></path>
+        </svg>
+        <input type="search" placeholder="Buscar serviços neste estabelecimento..." />
+      </label>
+
+      <div class="brand-mini" aria-label="Agendly">
+        <div class="mini-logo-wrap">
+          <img src="../img/Design%20sem%20nome%201.png" alt="Logo Agendly" />
+        </div>
+        <span>Agendly</span>
+      </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Navegação de localização">
+      <a href="indexcliente.html">Início</a>
+      <span>/</span>
+      <a href="servicos.html">Salões &amp; Barbearias</a>
+      <span>/</span>
+      <span>Studio Arte &amp; Cabelo</span>
+    </nav>
+
+    <main class="page-shell">
+      <aside class="store-sidebar" aria-label="Informações do estabelecimento">
+        <div class="store-avatar">SA</div>
+
+        <div class="status-pill">
+          <span class="status-dot"></span>
+        </div>
+
+        <div class="store-name-wrap">
+          <h1>Studio Arte &amp; Cabelo</h1>
+          <div class="store-rating">
+            <span>Cabelo &amp; Estética</span>
+            <span class="stars">★ 4,9</span>
+            <span>(128)</span>
+          </div>
+        </div>
+
+        <ul class="store-info-list">
+          <li>
+            <span class="icon">✉</span>
+            <div>
+              <span class="label">E-mail da empresa</span>
+              <a href="mailto:contato@studioartecabelo.com.br">contato@studioartecabelo.com.br</a>
+            </div>
+          </li>
+          <li>
+            <span class="icon">☎</span>
+            <div>
+              <span class="label">WhatsApp / Telefone</span>
+              <a href="tel:+5511987654321">(11) 98765-4321</a>
+            </div>
+          </li>
+          <li>
+            <span class="icon">⌂</span>
+            <div>
+              <span class="label">Localização</span>
+              <span>Av. Paulista, 1000 - Jardins<br />São Paulo - SP<br />Vero mapa</span>
+            </div>
+          </li>
+          <li>
+            <span class="icon">⏱</span>
+            <div>
+              <span class="label">Horário de funcionamento</span>
+              <span>Aberto agora: 09:00 - 20:00</span>
+            </div>
+          </li>
+        </ul>
+
+        <p class="store-description">
+          Especialistas em cortes modernos, visagismo e barbearia clássica combinando
+          criatividade, café e atendimento personalizado.
+        </p>
+
+        <div class="verification-box">
+          <span class="checkmark">✓</span>
+          <span>Garantia Agendly: confirmação imediata e cancelamento flexível sem taxa.</span>
+        </div>
+      </aside>
+
+      <section class="booking-panel" aria-label="Agendamento" aria-live="polite">
+        <div class="booking-header">
+          <div class="booking-title-group">
+            <h2>Área personalizada pelo estabelecimento</h2>
+            <h3>Espaço de Atendimento &amp; Agendamento</h3>
+            <p>Configure seu atendimento selecionando o serviço, data e horário ideal.</p>
+          </div>
+          <div class="response-time">Tempo médio de resposta<br /><strong>Imediato (Online)</strong></div>
+        </div>
+
+        <div class="step-block">
+          <div class="step-header">
+            <div class="step-title">
+              <span class="step-number">1</span>
+              <span>Selecione o Serviço Desejado</span>
+            </div>
+            <span class="option-count">3 opções disponíveis</span>
+          </div>
+
+          <div class="service-list">
+            <button type="button" class="service-option selected" aria-pressed="true">
+              <div class="service-main">
+                <div class="service-icon">✂</div>
+                <div class="service-copy">
+                  <h4>Corte de Cabelo Masculino &amp; Fade</h4>
+                  <p>Lavagem inclusa, finalização com modelagem do cabelo e acabamento no contorno.</p>
+                  <div class="service-meta">
+                    <span>R$ 60,00</span>
+                    <span>•</span>
+                    <span>45 min</span>
+                  </div>
+                </div>
+              </div>
+              <span class="service-action selected">Selecionado</span>
+            </button>
+
+            <button type="button" class="service-option" aria-pressed="false">
+              <div class="service-main">
+                <div class="service-icon">✂</div>
+                <div class="service-copy">
+                  <h4>Barba Terapia com Toalha Quente</h4>
+                  <p>Finalização com toalha quente, hidratação, pomada e acabamento delicado.</p>
+                  <div class="service-meta">
+                    <span>R$ 45,00</span>
+                    <span>•</span>
+                    <span>30 min</span>
+                  </div>
+                </div>
+              </div>
+              <span class="service-action">Selecionar</span>
+            </button>
+
+            <button type="button" class="service-option" aria-pressed="false">
+              <div class="service-main">
+                <div class="service-icon">✂</div>
+                <div class="service-copy">
+                  <h4>Combo Completo: Cabelo + Barba + Sobrancelha</h4>
+                  <p>Pacote completo para uma apresentação refinada e bem cuidada.</p>
+                  <div class="service-meta">
+                    <span>R$ 95,00</span>
+                    <span>•</span>
+                    <span>1h 15min</span>
+                  </div>
+                </div>
+              </div>
+              <span class="service-action">Selecionar</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="step-block block-date">
+          <div class="step-header">
+            <div class="step-title">
+              <span class="step-number">2</span>
+              <span>Escolha o Dia e Horário Disponível</span>
+            </div>
+            <span class="option-count muted">Ver calendário completo</span>
+          </div>
+
+          <div class="day-grid" aria-label="Dias disponíveis">
+            <button type="button" class="day-option is-active" aria-pressed="true">
+              <span class="day-label">Hoje</span>
+              <span class="day-number">10 Set</span>
+              <span class="day-vagas">7 vagas</span>
+            </button>
+            <button type="button" class="day-option" aria-pressed="false">
+              <span class="day-label">Amanhã</span>
+              <span class="day-number">11 Set</span>
+              <span class="day-vagas">7 vagas</span>
+            </button>
+            <button type="button" class="day-option" aria-pressed="false">
+              <span class="day-label">Sexta</span>
+              <span class="day-number">12 Set</span>
+              <span class="day-vagas">7 vagas</span>
+            </button>
+            <button type="button" class="day-option" aria-pressed="false">
+              <span class="day-label">Sábado</span>
+              <span class="day-number">13 Set</span>
+              <span class="day-vagas">7 vagas</span>
+            </button>
+          </div>
+
+          <div class="hours-block">
+            <h5>Horários livres para hoje (10/09):</h5>
+            <div class="time-grid" aria-label="Horários disponíveis">
+              <button type="button" class="time-option">09:30</button>
+              <button type="button" class="time-option is-selected">10:30</button>
+              <button type="button" class="time-option">11:30</button>
+              <button type="button" class="time-option">14:00</button>
+              <button type="button" class="time-option">15:30</button>
+              <button type="button" class="time-option">17:00</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary-box" aria-label="Resumo do agendamento">
+          <div class="summary-copy">
+            <span class="summary-label">Resumo do Agendamento selecionado:</span>
+            <strong>Corte de Cabelo Masculino &amp; Fade • Hoje às 10:30</strong>
+            <span>Total: R$ 60,00 (pagamento no local ou online)</span>
+          </div>
+          <a href="perfilcliente.html" class="summary-button">Continuar para Confirmação <span>→</span></a>
+        </div>
+
+        <div class="user-note">
+          <span class="note-icon">✓</span>
+          <span>Você está habilitado para agendamento online com confirmação imediata.</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Agendly</span>
+      <span>© 2026 Todos os direitos reservados.</span>
+      <nav aria-label="Links do rodapé">
+        <a href="servicos.html">Termos de Uso</a>
+        <a href="perfilcliente.html">Privacidade</a>
+        <a href="duvidas.html">Central de Ajuda</a>
+        <a href="agenda.html">Painel do Cliente</a>
+      </nav>
+    </footer>
+    <script src="../js/dev-mode.js" defer></script>
+  </body>
+</html>

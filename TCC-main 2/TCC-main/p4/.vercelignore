@@ -1,0 +1,12 @@
+api/bootstrap.php
+api/config.php
+api/index.php
+banco de dados/
+contas-demo.txt
+migrations/*.sql
+page.php
+.htaccess
+_routes.json
+DEPLOYMENT.md
+ESTRUTURA.md
+README.md

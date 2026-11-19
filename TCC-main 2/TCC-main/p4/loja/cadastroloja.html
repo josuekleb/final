@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0a2144" />
+    <title>Agendly — Cadastro de negócio</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/p4-theme.css" />
+    <script src="../js/p4-interactions.js" defer></script>
+    <script src="../js/app.js" defer></script>
+  </head>
+  <body class="auth-page">
+    <a class="help-link" href="../cliente/contato%20suporte.html">Precisa de ajuda? <strong>Suporte</strong></a>
+    <main class="page" role="main">
+      <section class="card card--large" aria-labelledby="register-title">
+        <a class="back" href="../cadastro.html" aria-label="Voltar">←</a>
+        <h1 id="register-title" class="brand">Cadastre seu negócio</h1>
+        <p class="lead">Crie o acesso para publicar serviços e gerenciar sua agenda.</p>
+
+        <form class="register-form" action="#" method="post" novalidate data-login-url="loginloja.html">
+          <div class="form-grid">
+            <div class="grid-item">
+              <label class="field-label" for="business-name">NOME DO NEGÓCIO</label>
+              <div class="form-field">
+                <input class="input" id="business-name" name="business" type="text" autocomplete="organization" maxlength="160" required placeholder="Nome da empresa ou profissional" />
+              </div>
+            </div>
+            <div class="grid-item">
+              <label class="field-label" for="business-cnpj">CNPJ</label>
+              <div class="form-field">
+                <input class="input cpfcnpj" id="business-cnpj" name="cpfcnpj" type="text" inputmode="numeric" autocomplete="off" maxlength="18" data-type="cnpj" required placeholder="00.000.000/0000-00" />
+              </div>
+            </div>
+            <div class="grid-item">
+              <label class="field-label" for="business-email">E-MAIL DE ACESSO</label>
+              <div class="form-field">
+                <input class="input" id="business-email" name="email" type="email" autocomplete="email" maxlength="190" required placeholder="contato@empresa.com.br" />
+              </div>
+            </div>
+            <div class="grid-item">
+              <label class="field-label" for="business-phone">TELEFONE / WHATSAPP</label>
+              <div class="form-field">
+                <input class="input" id="business-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" maxlength="11" required placeholder="11999990000" />
+              </div>
+            </div>
+            <div class="grid-item">
+              <label class="field-label" for="business-password">SENHA</label>
+              <div class="form-field">
+                <input class="input" id="business-password" name="password" type="password" autocomplete="new-password" minlength="8" maxlength="72" required placeholder="Mínimo de 8 caracteres" />
+              </div>
+            </div>
+            <div class="grid-item">
+              <label class="field-label" for="business-password-confirm">CONFIRMAR SENHA</label>
+              <div class="form-field">
+                <input class="input" id="business-password-confirm" name="password_confirm" type="password" autocomplete="new-password" minlength="8" maxlength="72" required placeholder="Digite a senha novamente" />
+              </div>
+            </div>
+          </div>
+
+          <p class="register-backend-notice" data-backend-notice hidden>Para criar sua conta, a API do Cloudflare Pages e o banco D1 precisam estar configurados.</p>
+          <p class="field-message" data-register-message role="status" aria-live="polite"></p>
+          <p class="register-terms">
+            Ao continuar, você concorda com os <a href="../cliente/Termos%20de%20Uso.html">Termos de Uso</a> e a
+            <a href="../cliente/Privacidade.html">Política de Privacidade</a>.
+          </p>
+          <button class="btn primary enter" type="submit">
+            <span class="label">Criar conta do negócio</span><span class="chev">→</span>
+          </button>
+          <div class="divider"></div>
+          <div class="register" style="text-align: center">
+            Já possui conta? <a href="loginloja.html">Entrar como negócio</a>
+          </div>
+          <div class="register" style="text-align: center">
+            Quer criar uma conta de cliente? <a href="../cliente/cadastrocliente.html">Ir para cadastro de cliente</a>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">© 2026 Agendly. Todos os direitos reservados.</footer>
+    <script src="../js/dev-mode.js" defer></script>
+  </body>
+</html>

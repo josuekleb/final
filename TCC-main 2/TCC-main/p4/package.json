@@ -1,0 +1,11 @@
+{
+  "name": "agendly-p4",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup:database": "node scripts/setup-turso.mjs"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.15.15"
+  }
+}

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agendly — Notificações</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="notification-body">
+    <header class="notification-topbar">
+      <div class="notification-brand-wrap">
+        <div class="notification-logo-mark" aria-label="Agendly logo">
+          <img src="../img/Design%20sem%20nome%201.png" alt="Agendly" />
+        </div>
+        <span class="notification-brand-text">Agendly</span>
+      </div>
+
+      <nav class="notification-nav" aria-label="Navegação principal">
+        <button class="notification-nav-item" type="button">
+          Editor da Página
+        </button>
+        <button class="notification-nav-item" type="button">
+          Agendamentos
+        </button>
+      </nav>
+
+      <div class="notification-user-area">
+        <button
+          class="notification-bell"
+          type="button"
+          aria-label="Notificações"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 3a5 5 0 0 1 5 5v3.5l1.8 3.5H5.2L7 11.5V8a5 5 0 0 1 5-5zm0 18a2.5 2.5 0 0 1-2.45-2h4.9A2.5 2.5 0 0 1 12 21z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <div class="notification-user-badge">
+          <span>BS</span>
+        </div>
+        <span class="notification-shop-name">Barbearia Silva Pro</span>
+      </div>
+    </header>
+
+    <main class="notification-main" role="main">
+      <section class="notification-panel" aria-label="Lista de notificações">
+        <div class="notification-header-row">
+          <div class="notification-title-wrap">
+            <a class="notification-back" href="indexloja.html" aria-label="Voltar ao painel da loja">
+              ←
+            </a>
+            <h1>Notificações</h1>
+          </div>
+
+          <button class="notification-mark-all" type="button">
+            ✓ Marcar todas como lidas
+          </button>
+        </div>
+
+        <div class="notification-tabs" aria-label="Tipos de notificações">
+          <button class="tab active" type="button">Todas (5)</button>
+          <button class="tab" type="button">Novos Agendamentos (4)</button>
+          <button class="tab" type="button">Cancelamentos (1)</button>
+          <button class="tab" type="button">Pendentes</button>
+        </div>
+
+        <article class="notification-card card-highlight">
+          <div class="notification-icon blue-icon">📅</div>
+
+          <div class="notification-content">
+            <div class="notification-meta-top">
+              <span class="notification-client">Lucas Fernandes</span>
+              <span class="label-pill label-success">Novo Agendamento</span>
+              <span class="notification-time">• Recebido há 5 min</span>
+            </div>
+
+            <h2>Corte Masculino Degrâde Fade + Lavagem Especial</h2>
+
+            <div class="notification-details-row">
+              <span>⏰ Hoje às 14:30</span>
+              <span>• Profissional: Mestre Rafael</span>
+              <span>• WhatsApp: (11) 98721-4321</span>
+              <span>• R$ 55,00 (Pago via Pix)</span>
+            </div>
+
+            <div class="notification-note">
+              “Observação do cliente: Primeiro vez no estabelecimento, preciso
+              acabamento com navalha.”
+            </div>
+          </div>
+
+          <div class="notification-actions">
+            <button class="confirm-btn" type="button">Confirmar</button>
+            <button class="secondary-btn" type="button">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <article class="notification-card">
+          <div class="notification-icon cyan-icon">＋</div>
+
+          <div class="notification-content">
+            <div class="notification-meta-top">
+              <span class="notification-client">Camila Rocha</span>
+              <span class="label-pill label-blue">Agendada</span>
+              <span class="notification-time">• Recebido há 22 min</span>
+            </div>
+
+            <h2>Design de Sobrancelhas + Hidratação Facial Express</h2>
+
+            <div class="notification-details-row">
+              <span>⏰ Hoje às 16:00</span>
+              <span>• Profissional: Dra. Beatriz</span>
+              <span>• Contato: (11) 97112-9901</span>
+              <span>• R$ 80,00 (Pagamento no local)</span>
+            </div>
+          </div>
+
+          <div class="notification-actions">
+            <button class="secondary-btn" type="button">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <article class="notification-card card-warning">
+          <div class="notification-icon yellow-icon">⚡</div>
+
+          <div class="notification-content">
+            <div class="notification-meta-top">
+              <span class="notification-client">Rafael Souza</span>
+              <span class="label-pill label-warning">Novo Agendamento</span>
+              <span class="notification-time">• Recebido há 1 hora</span>
+            </div>
+
+            <h2>Combo Barbétaria com Toalha Quente + Corte Tesoura</h2>
+
+            <div class="notification-details-row">
+              <span>⏰ Amanhã às 10:00</span>
+              <span>• Profissional: Carlos Eduardo</span>
+              <span>• R$ 90,00 (Pago via Cartão)</span>
+            </div>
+
+            <div class="notification-note">
+              “Observação do cliente: Possui alergia a mentol na loção
+              pós-barba.”
+            </div>
+          </div>
+
+          <div class="notification-actions">
+            <button class="confirm-btn" type="button">Confirmar</button>
+            <button class="secondary-btn" type="button">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <article class="notification-card card-cancelled">
+          <div class="notification-icon red-icon">×</div>
+
+          <div class="notification-content">
+            <div class="notification-meta-top">
+              <span class="notification-client">Mariana Costa</span>
+              <span class="label-pill label-red">Agendamento Cancelado</span>
+              <span class="notification-time">• Recebido há 2 horas</span>
+            </div>
+
+            <h2>Escova Modelada &amp; Hidratação Reconstrutiva</h2>
+
+            <div class="notification-details-row">
+              <span>⏰ Hoje às 18:00</span>
+              <span>• Cancelado pela cliente via link de autoatendimento</span>
+              <span>• Horário liberado na agenda</span>
+            </div>
+          </div>
+
+          <button class="secondary-btn history-btn" type="button">
+            Histórico
+          </button>
+        </article>
+
+        <article class="notification-card">
+          <div class="notification-icon green-icon">◔</div>
+
+          <div class="notification-content">
+            <div class="notification-meta-top">
+              <span class="notification-client">Bruno Martins</span>
+              <span class="label-pill label-success">Novo Agendamento</span>
+              <span class="notification-time">• Recebido há 3 horas</span>
+            </div>
+
+            <h2>Corte Executivo Máquna &amp; Barba Tradicional</h2>
+
+            <div class="notification-details-row">
+              <span>⏰ Segunda-feira, 15 Set às 09:30</span>
+              <span>• Profissional: Mestre Rafael</span>
+              <span>• WhatsApp: (11) 99402-1188</span>
+              <span>• R$ 75,00 (Pago via Pix)</span>
+            </div>
+          </div>
+
+          <div class="notification-actions">
+            <button class="confirm-btn" type="button">Confirmar</button>
+            <button class="secondary-btn" type="button">Ver Detalhes</button>
+          </div>
+        </article>
+      </section>
+
+      <div class="notification-footer-note">
+        Você visualizou todos os seus agendamentos das últimas 24 horas.
+      </div>
+
+      <button class="floating-scroll" type="button" aria-label="Ir para o topo">
+        ↓
+      </button>
+    </main>
+    <script src="../js/dev-mode.js" defer></script>
+  </body>
+</html>

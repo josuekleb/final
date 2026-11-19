@@ -1,0 +1,17 @@
+CONTAS DE TESTE AGENDLY P4
+Uso exclusivo para demonstracao. Nao use estas senhas em outros servicos.
+
+CLIENTE
+E-mail: cliente.demo@agendly.test
+Senha: Cliente123!
+Acesso: p4/cliente/logincliente.html
+
+NEGOCIO
+E-mail: negocio.demo@agendly.test
+Senha: Negocio123!
+Acesso: p4/loja/loginloja.html
+
+As contas sao inseridas somente pelo arquivo banco de dados/agendly_demo_seed.sql.
+Importe esse arquivo apenas em um banco local de demonstracao.
+No modo PHP, as senhas sao verificadas no servidor. Ao abrir os HTML diretamente,
+o prototipo usa a autenticacao local de demonstracao.
